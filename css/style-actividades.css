@@ -1,0 +1,303 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    /* font-size: 1rem; */
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+  
+  
+  
+.grid-container-actividades{
+    display: grid;
+    grid-template: auto auto auto  auto / 1fr 1fr 1fr 1fr;
+    background-color: rgb(174, 173, 128);
+    grid-gap: 3px;  
+    
+}
+  
+.item-nav{
+    grid-column: 1/ span 4;
+    font-size: 1.3vw;
+}
+  
+
+.item-header{
+    grid-column: 1/ span 4;
+    background: url(../img/playa.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+  
+#cuadro-titulo{
+  margin: 2% 5% -1% 0%;
+  padding: 2%;
+  background-color: rgba(2, 93, 144,0.45);
+  /* height: 100%; */
+  width: 30%;
+  border-top-right-radius: 75%;
+  border-bottom-right-radius: 75%;
+  display: flex;
+  align-items: center;
+  color: white;
+  text-shadow: 2px 2px 4px black;
+  font-size: 2.2em;
+  font-weight: bold;
+  /* font-family: 'Noto Sans KR', sans-serif; */
+  font-family: 'ABeeZee', sans-serif;
+}  
+  
+
+.item-footer{
+  background-color: rgb(2, 93, 144);
+  grid-column: 1 / span 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  margin-top: 50px;
+}
+  
+
+.p-footer{
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  
+}
+
+.footer-iconos{
+display: flex;
+justify-content: space-around;
+margin: 5px;
+color: white;
+font-size: 1em;
+list-style: none;
+}
+
+
+.footer-li{
+margin: 0 15px;
+} 
+  
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: rgb(2, 93, 144);   
+}
+  
+.menu a{
+    padding: 1em 2em ;  
+    color: white;
+    text-decoration: none;
+    font-family: 'Rubik', sans-serif;
+    text-shadow: 2px 2px 4px #000000;
+}
+  
+  
+nav a:hover {   
+   background-color: rgb(174, 173, 128);
+}
+  
+  
+.titulo{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 1.1em;
+    text-shadow: 2px 2px 4px #000000;
+  
+  
+}
+  
+  
+.animate__animated.animate__fadeInLeft {
+    --animate-duration: 1.7s;
+}
+  
+
+.container__cards{
+    
+    margin: 0 30px;
+    margin-top: 10px;
+    margin-bottom: 80px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+}
+
+.card{
+    width: 300px;
+    margin: 10px;
+    transition: all 300ms;
+}
+
+.card:hover{
+    width: 400px;
+}
+
+.card .cover{
+    width: 100%;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card .cover img{
+    width: 400px;
+    display: block;
+    margin: auto;
+    position: relative;
+    top: 40px;
+    z-index: 1;
+    transition: all 400ms;
+}
+
+.card:hover .cover img{
+    top: 0px;
+    filter: none;
+}
+
+.card .img__back{
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    bottom: -80px;
+    left: 0;
+    background-size: cover;
+    border-radius: 20px;
+    transition: all 300ms;
+}
+
+
+.card:hover .img__back{
+    bottom: -40px;
+}
+
+.card .descripcion{
+    background: white;
+    margin-top: -10px;
+    padding: 20px;
+    min-height: 230px;
+    border-radius: 0px 0px 20px 20px;
+    transition: all 300ms;
+}
+
+.card:hover .descripcion{
+    padding: 40px;
+}
+
+.card .descripcion h2{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.card .descripcion p{
+    margin-top: 10px;
+}
+
+.card .descripcion input{
+    padding: 10px 40px;
+    margin-top: 20px;
+    border: none;
+    background: #e0b187;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 300ms;
+}
+
+.card .descripcion input:hover{
+    background: #e0b187;
+}
+
+
+.autores{
+  background-color: rgb(2, 93, 144);
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  color: white;   
+  padding: 5px; 
+}
+
+
+
+@media screen and (min-width: 621px) and (max-width: 1080px){
+
+.item-nav{
+        
+    font-size: 1.8vw;
+}
+
+#cuadro-titulo{
+
+    display: flex;
+        margin-top: -19px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        width: 100vw;
+        border-radius: 0%;
+        padding: 0px;      
+        height: fit-content;
+}
+
+.titulo{
+    font-size: 2.3rem;
+    padding: 1%;
+    margin: auto;
+}
+
+.container__cards{
+  margin: 0 50%;
+}
+
+}
+
+
+@media screen  and (max-width: 620px){
+
+.menu a{
+        padding: 15px 10px;
+        font-size: 2.1em;
+        text-align: center;
+        box-sizing: border-box;
+}
+
+
+
+
+
+#cuadro-titulo{
+
+    display: flex;
+        margin-top: -19px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        width: 100vw;
+        border-radius: 0%;
+        padding: 0px;      
+        height: fit-content;
+}
+
+.titulo{
+    font-size: 2rem;
+    padding: 1%;
+    margin: auto;
+}
+
+
+.container__cards{
+  margin: 0 50%;
+}
+
+
+
+}

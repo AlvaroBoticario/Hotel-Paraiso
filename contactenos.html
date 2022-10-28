@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Fontawesome--> 
+    <script src="https://kit.fontawesome.com/cd715ad2fb.js" crossorigin="anonymous"></script>
+
+      <!--Google Fonts--> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee&family=GFS+Neohellenic&family=Marcellus&display=swap" rel="stylesheet">        
+
+   
+   <!--Animaciones CSS-->
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+   <!--Hoja de estilos--> 
+    <link rel="stylesheet" href="css/style-contactenos.css"> 
+
+    <!--Validación formulario con JS-->  
+    <script src="js/index.js"></script>
+
+
+    <!--Favicon--> 
+    <link rel="icon" href="Img/favicon.ico">
+
+    <title>Hotel Paraíso</title>
+</head>
+
+<body>
+    
+    <div class="grid-container-habitaciones"> 
+        
+        <nav class="item-nav">
+
+            <div class="menu">
+                <a class="a1" href="index.html">El Hotel</a>
+                <a class="a2" href="habitaciones.html">Nuestras Habitaciones</a>
+                <a class="a2" href="sobre_nosotros.html">Sobre Nosotros</a>
+                <a class="a2" href="Actividades.html">Actividades</a>
+                <a class="a3" href="contactenos.html">Contáctenos</a>
+            </div>
+                
+        </nav>
+        
+    <div class="item-main">
+
+        <div class="cabecera">   
+            <div id="cuadro-titulo" class="animate__animated animate__fadeInLeft" >
+                <h2 id="Titulo-Portada">RESERVAS</h2>
+            </div>
+            <div id="cuadro-texto" class="animate__animated animate__zoomIn">
+                <h2 id="texto1">¿Quiere hacer una reserva? ¿Tiene alguna consulta? ¡Complete el siguiente formulario y nos pondremos en contacto con usted pronto!</h2>
+                
+            </div> 
+        </div>
+
+
+        <div class="secciones">  
+
+            <div class="seccion1 animate__animated animate__fadeInLeft">
+                <div >
+                    <p id="texto2">También puede llamarnos o enviarnos un correo electrónico con sus consultas</p>
+                    <br><br>
+
+                    <div class="flip-box1">
+                        <div class="flip-box-inner">
+                            <div class="flip-box-front">
+                                <h2 id="telefono">TELÉFONOS</h2>
+                            </div>
+                        
+                            <div class="flip-box-back" id="texto3">
+                                <span style="text-decoration: underline;">Reservas:</span><span> (689) 40 603 170</span>
+                                <br><br>
+                                <span style="text-decoration: underline;">Recepción:</span><span> (689) 40 603 175</span>
+                                <br><br>
+                                <span style="text-decoration: underline;"> Administración:</span><span> (689) 40 603 180</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <br><br>
+
+                    <div class="flip-box2">
+                        <div class="flip-box-inner">
+                            <div class="flip-box-front">                
+                                <h2 id="email">EMAILS</h2>
+                            </div>
+                        
+                            <div class="flip-box-back" id="texto4">
+                                <span style="text-decoration: underline;">Reservas:</span><span> reservas@hotelparaiso.com</span>
+                                <br><br>
+                                <span style="text-decoration: underline;">Otras consultas:</span><span> info@hotelparaiso.com</span>
+                            </div>
+                        </div>
+                    </div>    
+
+                </div>
+
+
+            </div>
+
+
+
+            <div class="seccion2 animate__animated animate__zoomIn">
+                <div>
+                    <div class="form">
+                        <form action="mailto:hotelparaiso@gmail.com" method="post" enctype="text/plain" id="formulario">
+                            <Section class="Formulario">
+                                <h4>Formulario</h4>
+                                Nombre* <input class="Datos" type="text" name="Nombre" size="10" maxlength="20" id="nombre">
+                                Apellido* <input class="Datos" type="text" name="Apellido" id="apellido"> 
+                                Celular <input class="Datos" type="tel" name="Celular" id="celular">
+                                Mail* <input class="Datos" type="email" name="Mail" id="mail">
+                                Consulta <textarea class="Datos" name="Consulta" cols="80" rows="10" id="consulta" placeholder="Escribe tu consulta..."></textarea>
+                                <input class="Boton" type="submit" value="Enviar"> 
+                            </Section>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="item-footer">
+            <div>
+                <p class="p-footer">Seguinos en nuestras redes:</p>
+                <ul class="footer-iconos">
+                    <li class="footer-li"><i class="fa-brands fa-instagram fa-lg"></i></li>
+                    <li class="footer-li"><i class="fa-brands fa-square-facebook fa-lg"></i></li>
+                    <li class="footer-li"><i class="fa-brands fa-twitter fa-lg"></i></li>
+                    <li class="footer-li"><i class="fa-brands fa-youtube fa-lg"></i></li>   
+                </ul>
+            </div>
+        </div>
+        
+        <div class="autores">    
+            <p style="font-size: 10px ;">Creado por Florencia Labadie, Julieta Gueventter y Álvaro Boticario </p>
+        </div>
+    
+        
+    </div>
+
+</body>
+</html>
