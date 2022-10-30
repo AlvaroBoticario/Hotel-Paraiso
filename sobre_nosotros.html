@@ -26,6 +26,9 @@
     <!--Favicon--> 
     <link rel="icon" href="Img/favicon.ico">
 
+    <!--Api rest clima--> 
+    <script src="js/api-rest.js"></script>
+
     <title>Hotel Paraíso</title>
 </head>
 
@@ -39,7 +42,7 @@
                 <a class="a1" href="index.html">El Hotel</a>
                 <a class="a2" href="habitaciones.html">Nuestras Habitaciones</a>
                 <a class="a2" href="sobre_nosotros.html">Sobre Nosotros</a>
-                <a class="a2" href="Actividades.html">Actividades</a>
+                <a class="a2" href="actividades.html">Actividades</a>
                 <a class="a3" href="contactenos.html">Contáctenos</a>
             </div>
                 
@@ -49,7 +52,7 @@
 
         <div class="cabecera">   
             <div id="cuadro-titulo" class="animate__animated animate__fadeInLeft" >
-                <p id="Titulo-Portada">SOBRE NOSOTROS</p>
+                <h2 id="Titulo-Portada">SOBRE NOSOTROS</h2>
             </div>
             <div id="cuadro-texto" class="animate__animated animate__zoomIn">
                 <h2 id="texto1">ISLA PRIVADA PARADISÍACA EN EL CORAZÓN DE LA POLINESIA FRANCESA</h2>
@@ -69,6 +72,17 @@
             <div class="direccion animate__animated animate__fadeInUp">
                 <h3 id="titulo-direccion"><a href="https://goo.gl/maps/Xt1oLWULcxYLp5ps5" target="_blank;">DIRECCIÓN</a></h3>
                 <p id="texto3">BP 547, MOTU TEHOTU 98730, POLINESIA FRANCESA</p>
+                <div id="contenedor-clima">
+                    <div id="caja1-clima">
+                        <h1 id="temperatura-valor"></h1>
+                        <h1 id="temperatura-descripcion"></h1>
+                    </div>
+                    <div id="caja2-clima"> 
+                        <h2>BORA-BORA</h2>
+                        <h1 id="ubicacion"></h1>
+                        <img id="icono-animado" src="" alt="icono">
+                    </div>
+                </div>
             </div>
            
             <div class="mapa animate__animated animate__fadeInUp">

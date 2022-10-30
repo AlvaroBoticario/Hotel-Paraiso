@@ -7,7 +7,6 @@
 
 .grid-container-habitaciones{
     display: grid;
-    /* grid-template: auto auto auto  auto / 1fr 1fr 1fr 1fr; */
     grid-template: auto auto auto  auto / auto auto auto auto;
     background-color: rgb(174, 173, 128);
     grid-gap: 3px;
@@ -73,8 +72,8 @@ nav a:hover {
     align-items: center;
     color: white;
     text-shadow: 2px 2px 4px #000000;
-    font-size: 2.2em;
-    font-weight: bold;
+    font-size: 1.8em;
+    /* font-weight: bold; */
     /* font-family: 'Noto Sans KR', sans-serif; */
 }
 
@@ -212,9 +211,7 @@ margin: 0 15px;
         align-items: center;
         color: white;
         text-shadow: 2px 2px 4px #000000;
-        font-size: 2.2em;
-        /* font-family: 'Noto Sans KR', sans-serif; */
-        font-weight: bold;
+        font-size: 1.5em;
         padding: 2%;
         margin: auto;
         justify-content: center;
@@ -254,14 +251,11 @@ margin: 0 15px;
         align-items: center;
         color: white;
         text-shadow: 2px 2px 4px #000000;
-        font-size: 2.2em;
-        font-weight: bold;
-        /* font-family: 'Noto Sans KR', sans-serif; */
+        font-size: 1.8em;
         padding: 2%;
         margin: auto;
         justify-content: center;
         
 } 
 }
-
 
